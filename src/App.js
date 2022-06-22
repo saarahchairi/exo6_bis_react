@@ -1,8 +1,8 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import Header from "./Header/Header";
-import Contenu from "./Contenu/Contenu";
-import Footer from "./Footer/Footer";
+import Header from "./Header/Section_nav";
+import Contenu from "./Contenu/Section";
+import Footer from "./Footer/BasDeLaPAge";
 
 class App extends React.Component{
   render(){
