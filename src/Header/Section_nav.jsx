@@ -1,6 +1,9 @@
 import React from "react";
 
 class Header extends React.Component {
+    evenement = (x) => {
+        console.log(x);
+    }
     render() {
         return (
             <div>
@@ -11,9 +14,9 @@ class Header extends React.Component {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                            <a class="nav-link" href="#">Features</a>
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a onClick={() => {this.evenement("Home")}} class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a onClick={() => {this.evenement("Features")}} class="nav-link" href="#">Features</a>
+                            <a onClick={() => {this.evenement("Pricing")}} class="nav-link" href="#">Pricing</a>
                             <a class="nav-link disabled">Disabled</a>
                         </div>
                     </div>
